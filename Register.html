@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    
+    <form action="submit" id="register_form">
+        <div class="Register">
+
+        <label for = "id" >Ingrese su numero de cédula</label>
+        <input type="number" id="id" required><br>
+
+        <label for = "name" >Ingrese su nombre</label>
+        <input type="text" id="name" required><br>
+
+        <label for = "lastname" >Ingrese sus apellidos</label>
+        <input type="text" id="lastname" required><br>
+
+        <label for = "email" >Ingrese su correo electrónico</label>
+        <input type="email" id="email" required><br>
+
+
+        <label for = "phone" >Ingrese su numero de teléfono</label>
+        <input type="number" id="phone" required><br>
+
+        <label for="colaborator">Seleccione que tipo de colaborador desea ser: </label>
+        <select name="colaborator_choice" id="colaborator">
+            <option value="">Seleccionar</option>
+            <option value="buyer">Comprador</option>
+            <option value="seller">Vendedor</option>
+        </select>
+        </div>
+
+        <button type="submit" id="btn_register">Registrarse</button>
+
+    </form>
+
+</body>
+</html>
