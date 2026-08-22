@@ -47,6 +47,8 @@ document.getElementById('register_form').addEventListener('submit', function (ev
         alert('Error al enviar: ' + JSON.stringify(error));
     });
 });
+
+
 function SenMessage() {
     const telefono = "50684796204";
     const mensaje = encodeURIComponent("Hola, me gustaría obtener más información sobre el proyecto Guápiles Sin Desperdicios. ¿Podrían proporcionarme detalles adicionales?");
