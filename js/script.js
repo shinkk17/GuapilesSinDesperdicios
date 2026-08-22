@@ -35,7 +35,7 @@ document.getElementById('register_form').addEventListener('submit', function (ev
     const templateParams = {
         name: 'Guapiles Sin Desperdicios',
         message: message,
-        //title : link de la pagina de inicio en vercel
+        title : 'https://guapiles-sin-desperdicios.vercel.app/',
         user_email: email,
         reply_email: 'guapilessindesperdicios'
     };
