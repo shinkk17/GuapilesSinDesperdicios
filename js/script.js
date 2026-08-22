@@ -16,6 +16,11 @@ document.getElementById('register_form').addEventListener('submit', function (ev
 
     const colaborator_choice = document.getElementById('colaborator_choice').value;
 
+    if (name == '' || lastname == '' || email == '' || id == '' || phone_num == ''){
+        alert('Debe llenar todos los campos');
+        return;
+    }
+
     let message = "";
 
     if (colaborator_choice == 'buyer') {
