@@ -127,7 +127,7 @@ header {
 }
 
 
-.btn-registe,.btn-contact {
+.btn-register,.btn-contact {
     width: 100%;
     padding: 12px;
     background-color: #ca7015;
@@ -142,4 +142,21 @@ header {
 
 .btn_register:hover {
     background-color: #6e3f11;
+}
+.services-us {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; 
+}
+
+.descripcionServices-us {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    color: hsl(0, 0%, 3%);
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding: 20px;
 }
