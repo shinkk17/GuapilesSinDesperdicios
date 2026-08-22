@@ -160,3 +160,224 @@ header {
     letter-spacing: 1px;
     padding: 20px;
 }
+
+
+section, .hero-section, .intro-section, .seccion-mision, .seccion-beneficios, .seccion-faq {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-logo-navbar {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,243,224,0.95));
+}
+
+.hero-content h1 {
+    color: #3e1f00;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #444;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.intro-section {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.intro-card h2 {
+    color: #e65100;
+    margin-bottom: 10px;
+}
+
+.intro-card p {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+.btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    background-color: #e65100;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #ae4106;
+}
+
+.beneficios-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.beneficios-lista section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-top: 4px solid #e65100;
+    margin: 0;
+    width: auto;
+}
+
+.beneficios-lista h3 {
+    color: #e65100;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.seccion-faq {
+    text-align: left;
+}
+
+.titulo-faq {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 16px;
+    color: #3e1f00;
+    outline: none;
+}
+
+details p {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #ff8f00;
+    color: #444;
+}
+
+footer {
+    background-color: #3e1f00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+.register-section {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3e1f00;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d4a373;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #e65100;
+    box-shadow: 0 0 5px rgba(230, 81, 0, 0.3);
+}
+
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background-color: #ca7015;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-register:hover {
+    background-color: #6e3f11;
+}

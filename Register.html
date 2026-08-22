@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,66 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Registrarse</title>
 </head>
+
 <body>
     <header>
+        <nav class="navbar">
+            <span class="logo-nav">
+                <img src="img/LogoMamalon.png" alt="GSD" class="foto-logo-navbar">
+            </span>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="AboutUs.html">Sobre Nosotros</a></li>
+                <li><a href="AditionalInfo.html">Información adicional</a></li>
+                <li><a href="Register.html">Registro</a></li>
+                <li><a href="Contact.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <section id="About_Us" class="About_Us">
-            <div class="About_Us-content">
-                <img src="img/LogoMamalon.png" alt="Logo de Guapiles sin Desperdicios" class="foto-logo">
+        <section class="register-section">
+            <h1 class="titulo-us">Registro</h1>
+            <p class="subtitulo-us">Formá parte de Guápiles Sin Desperdicios.</p>
 
-                <h1 class="titulo-us">Registro</h1>
-                
-             
+            <form id="register_form">
+                <div class="form-group">
+                    <label for="id">Número de cédula</label>
+                    <input type="number" id="id" required>
+                </div>
 
-            </div>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Apellidos</label>
+                    <input type="text" id="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone_num">Número de teléfono</label>
+                    <input type="number" id="phone_num" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="colaborator_choice">¿Qué tipo de colaborador desea ser?</label>
+                    <select name="colaborator_choice" id="colaborator_choice" required>
+                        <option value="">Seleccionar</option>
+                        <option value="buyer">Comprador</option>
+                        <option value="seller">Vendedor</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn_register" class="btn-register">Registrarse</button>
+            </form>
         </section>
-       <form action="submit" id="register_form">
-             <div class="form-group">
-
-                <label for="id">Ingrese su numero de cédula</label>
-                <input type="number" id="id" required><br>
-
-                <label for="name">Ingrese su nombre</label>
-                <input type="text" id="name" required><br>
-
-                <label for="lastname">Ingrese sus apellidos</label>
-                <input type="text" id="lastname" required><br>
-
-                <label for="email">Ingrese su correo electrónico</label>
-                <input type="email" id="email" required><br>
-
-
-                <label for="phone_num">Ingrese su numero de teléfono</label>
-                <input type="number" id="phone_num" required><br>
-
-                <label for="colaborator">Seleccione que tipo de colaborador desea ser: </label>
-                <select name="colaborator_choice" id="colaborator_choice" required>
-                    <option value="">Seleccionar</option>
-                    <option value="buyer">Comprador</option>
-                    <option value="seller">Vendedor</option>
-                </select>
-            </div>
-
-            <button type="submit" id="btn_register" class="btn-register">Registrarse</button>
-
-        </form>
     </main>
 
     <footer>
@@ -59,4 +75,5 @@
         <script src="js/script.js"></script>
     </footer>
 </body>
+
 </html>

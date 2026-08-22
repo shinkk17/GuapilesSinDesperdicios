@@ -19,9 +19,12 @@ document.getElementById('register_form').addEventListener('submit', function (ev
     let message = "";
 
     if (colaborator_choice == 'buyer') {
-        message = 'Hola ' + name + " " + lastname + ", nos alegra que estés interesad@ en nuestro servicio como Comprador. \n¡Muchas gracias por unirte a la causa para un Guápiles con menos desperdicios!";
+        message = 'Hola ' + name + " " + lastname + ", nos alegra que estés interesad@ en nuestro servicio como Comprador. \n¡Muchas gracias por unirte a la causa para un Guápiles con menos desperdicios!\n\n¡Te avisaremos cuando la web esté lista!";
     } else if (colaborator_choice == 'seller') {
-        message = 'Hola ' + name + " " + lastname + ", nos alegra que estés interesad@ en nuestro servicio como Vendedor \nMuchas gracias por unirte a la causa para un Guápiles con menos desperdicios. ¡Muchos éxitos!";
+        message = 'Hola ' + name + " " + lastname + ", nos alegra que estés interesad@ en nuestro servicio como Vendedor \nMuchas gracias por unirte a la causa para un Guápiles con menos desperdicios.\n\n¡Te avisaremos cuando la web esté lista!";
+    }else {
+        alert('Debe ingresar una opción de colaborador válida')
+        return;
     }
 
     const templateParams = {
